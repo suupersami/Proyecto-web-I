@@ -1,0 +1,47 @@
+ 
+ /*header*/
+ * {
+           margin: 0;
+           padding: 0;
+       }
+ header{
+    position: sticky; /* el posicionamiento pegajoso */
+           top: 0;
+           color: antiquewhite;
+           z-index: 999; /* Capa z para controlar el apilamiento de elementos */
+ }
+ nav{
+    background-color:#78C0E0;
+ }
+ .conteiner-1{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.conteiner-logo{
+    display: flex;
+    
+}
+img{
+    object-fit: cover;
+}
+.conteiner-iconos{
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    gap:5px;
+}
+.conteiner-cet30{
+    margin-top: 20px;
+    display: flex;
+}
+.conteiner-bottom-cet30{
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+    right: -310px;
+    background-color:#3943b7;
+   
+}
