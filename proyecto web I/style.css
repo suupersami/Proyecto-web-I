@@ -1,47 +1,191 @@
- 
- /*header*/
- * {
+
+body p{
+    font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+body h1 {
+    font-size:60px;
+ font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:10px;
+  font-style: normal;
+  color: aliceblue;
+}
+h2{
+    font-size:35px;
+    font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:10px;
+  font-style: normal;
+  color: aliceblue;
+
+}
+* {
            margin: 0;
            padding: 0;
        }
- header{
-    position: sticky; /* el posicionamiento pegajoso */
-           top: 0;
-           color: antiquewhite;
-           z-index: 999; /* Capa z para controlar el apilamiento de elementos */
- }
- nav{
-    background-color:#78C0E0;
- }
- .conteiner-1{
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
+main{
+    background-color: #8075FF;
+    padding:6px;
+
 }
-.conteiner-logo{
-    display: flex;
-    
-}
-img{
-    object-fit: cover;
-}
-.conteiner-iconos{
-    display: flex;
-    justify-content:center;
-    align-items: flex-end;
-    gap:5px;
-}
-.conteiner-cet30{
-    margin-top: 20px;
-    display: flex;
-}
-.conteiner-bottom-cet30{
-    display: flex;
-    gap:20px;
-    flex-direction: column;
-    position: relative;
-    top: 20px;
-    right: -310px;
-    background-color:#3943b7;
+header{
+    position: fixed;
+    top:0;
+     background-color: #8075FF;
    
 }
+header.navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 40px;
+     position: sticky;
+     z-index: 999;
+    border: solid 3px rgb(170, 156, 250);
+     /* Capa z para controlar el apilamiento de elementos */
+ }
+
+ .logo-cet30 img {
+     height: 60px;
+     width: 60px;
+ }
+
+ .nav-links a {
+     text-decoration: none;
+     margin-left: 30px;
+     font-weight: bold;
+ }
+
+ .conteiner-1 {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     justify-content: space-around;
+     background-color:#8075FF;
+ }
+ .p-card{
+    font-size:7px;
+    text-align: justify;
+    padding-bottom:5px;
+    padding-top: 5px;
+    line-height:11px;
+ }
+
+ .conteiner-img-muestra img {
+     width: 290px;
+     height: 290px;
+ }
+
+ img {
+     object-fit: cover;
+ }
+
+ .card-cet30 {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 15px;
+     flex-direction: column;
+ }
+
+ .conteiner-img-muestra {
+     height: 300px;
+     width: 500px;
+ }
+.conteiner-cards{
+     gap:11px;
+}
+ .card {
+     display: flex;
+     width: 240px;
+     align-items: center;
+     text-align: center;
+     background-color:#CCCCFF;
+     border-radius:20px;
+     padding:6px;
+ }
+ .posicion{
+    position: relative;
+ }
+ .posicion-2{
+    position:absolute;
+    bottom:4px;
+    right:0px;
+ }
+ .conteiner-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+ }
+ .banner{
+    display: flex;
+    justify-content: center;
+ }
+ .banner a{
+    text-decoration: none;
+ }
+ .conteiner-footer1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:55px;
+ }
+ .conteiner-logo-footer2{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    line-height:35px;
+
+ }
+ .conteiner-logo-footer{
+     width:350px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+ }
+ footer{
+    padding-top:50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+     background-color:#8075FF;
+     padding:8px;
+     line-height:19px;
+ }
+ .banner {
+    padding:10px 0px 10px 0px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+   .texto {
+    display: inline-block;
+    padding-left: 100%;
+    animation: mover 12s linear infinite;
+    font-size: 2rem;
+  }
+  @keyframes mover {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+  }
+  .banner2 {
+    padding:10px 0px 10px 0px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .texto2 {
+    display: inline-block;
+    padding-right: 100%;
+    animation: moverDerecha 12s linear infinite;
+    font-size: 2rem;
+  }
+
+  @keyframes moverDerecha {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+  }
