@@ -1,0 +1,362 @@
+body p {
+    font-family: "Syne Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body .h1-principal{
+    font-size: 70px;
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: aliceblue;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    color: aliceblue;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #8075FF;
+    padding: 9px;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #8075FF;
+
+}
+
+header.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    position: sticky;
+    z-index: 999;
+    border: solid 3px rgb(170, 156, 250);
+    /* Capa z para controlar el apilamiento de elementos */
+}
+
+.logo-cet30 img {
+    height: 100px;
+    width: 100px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin-left: 30px;
+  
+  font-size: 2em;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+.menu summary{
+    text-decoration: none;
+    margin-left: 30px;
+   font-size: 2em;
+   color: #551A8b;
+}
+/* Opcional si tus <a> cambian al pasar el mouse */
+.menu summary:hover {
+    opacity: 0.3;
+}
+
+.dropdown summary{
+    cursor: pointer;
+    list-style: none;
+}
+summary{
+    list-style:none;
+}
+/*para ocultar la flecha por defecto*/
+.dropdown summary ::-webkit-details-marker{
+    display: none;
+}
+
+.conteiner-iconos {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
+}
+
+.iconos {
+    display: flex;
+    gap: 11px;
+}
+
+.conteiner-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+    background-color: #8075FF;
+}
+
+.p-card {
+    font-size: 7px;
+    text-align: justify;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    line-height: 11px;
+}
+
+.conteiner-img-muestra img {
+    width: 290px;
+    height: 290px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.card-cet30 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #CAD5CA;
+    border-radius: 26px;
+}
+
+button {
+    font-size: 1em;
+    background-color: #6321EE;
+    padding: 9px;
+    border-color: #6321EE;
+    border-radius: 16px;
+}
+
+
+.conteiner-img-muestra {
+    height: 300px;
+    width: 500px;
+}
+
+.conteiner-cards {
+    gap: 80px;
+}
+
+.card {
+    display: flex;
+    width: 190px;
+    justify-content: center;
+    background-color: #CCCCFF;
+    border-radius: 20px;
+    padding: 6px;
+    text-align: center;
+
+}
+
+.card img {
+    padding-top: 6px;
+}
+
+.posicion {
+    position: relative;
+}
+
+.posicion-2 {
+    position: absolute;
+    bottom: 4px;
+    right: 0px;
+}
+
+.conteiner-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner a {
+    text-decoration: none;
+}
+
+.conteiner-footer1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    padding-top: 36px;
+}
+
+.conteiner-logo-footer2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    line-height: 35px;
+
+}
+
+.conteiner-logo-footer {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8075FF;
+    padding: 8px;
+    line-height: 19px;
+}
+
+.marquee-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    white-space: nowrap;
+}
+
+.track {
+    display: flex;
+    width: fit-content;
+    animation: scroll-left 12s linear infinite;
+}
+
+.reverse .track {
+    animation: scroll-right 12s linear infinite;
+}
+
+.content {
+    display: flex;
+}
+
+.item {
+    font-size: 28px;
+    font-weight: 600;
+    padding-right: 60px;
+}
+
+/* Loop perfecto 0% → -50% */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*pagina muestra*/
+.h2-muestra{
+    text-align: center;
+    font-size: 60px;
+}
+    .section {
+        width: 100%;
+       
+        margin: 30px 0;
+       
+        padding: 0 0;
+       
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+.section img {
+    width: 55%;
+    border-radius: 4px;
+}
+.img1-muestra{
+    height:400px;
+}
+.p-muestra{
+    line-height: 36px;
+    font-size: 18px;
+}
+
+.text-box {
+    padding: 20px 25px;
+    width: 45%;
+    border-radius: 4px;
+    background-color: #CCCCFF;
+}
+
+.text-box h2 {
+    margin-top: 0;
+
+}
+
+.reverse {
+    flex-direction: row-reverse ;
+}
+/*Formulario cet 30*/
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;        /* opcional: ancho del formulario */
+    gap: 10px;           /* separa verticalmente los campos */
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+}
+.conteiner-formulario{
+    
+    max-width: 700px; /* O el ancho que desees */
+    width: 90%;/* Esto asegura que se ajuste bien en pantallas pequeñas */
+    /* 2. Centrar el bloque horizontalmente */
+    margin-left: auto;
+    margin-right: auto;
+    /* Manera abreviada: margin: 0 auto; */
+
+    /* 3. (Opcional) Agregar un poco de espacio vertical y un fondo */
+    padding: 20px;
+    background-color: #f0f0f0; /* Color claro para destacar el formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    height:600px;
+}
+
