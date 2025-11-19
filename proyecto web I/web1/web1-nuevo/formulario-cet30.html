@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo-cet30">
+            <a href="/index.html"><img src="/assets/logo cet 302.png" alt="logo cet30"></a>
+        </div>
+
+        <nav class="nav-links">
+            <ul class="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/muestra2025.html">Muestra 2025</a></li>
+                <li>
+                    <details class="dropdown">
+                        <summary>Talleres</summary>
+                        <ul class="dropdown-content">
+                            <li><a href="/taller-carpinteria.html">Carpintería</a></li>
+                            <li><a href="/taller-hojalateria.html">Hojalatería</a></li>
+                            <li><a href="/taller-electricidad.html">Electricidad</a></li>
+                            <li><a href="/taller-ajustes.html">Ajustes</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="">Noticias</a></li>
+            </ul>
+        </nav>
+        <div>
+            <div class="conteiner-iconos">
+                <p>Siguenos</p>
+                <div class="iconos">
+                    <a href="https://www.youtube.com/@centrodeeducaciontecnicace9419"><img src="/assets/youtube.png"
+                            alt="logo youtube" width="36px" height="36px"></a>
+                    <a href="https://www.facebook.com/pages/colegio%20cet%2030/393912487631582/#"><img
+                            src="/assets/facebook (1).png" alt="logo facebook" width="36px" height="36px"></a>
+                    <a href="https://www.instagram.com/cet30cipo/?next=%2F"><img src="/assets/instagram (1).png"
+                            alt="logo instagram" width="36px" height="36px"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="conteiner-formulario">
+            <h2 class="titulo-formulario">Formulario CET 30</h2>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required> <!--required hace el campo obligatorio-->
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido" required>
+                        <label for="dni">Numero de DNI</label>
+                        <input type="number" name="dni" id="dni" required>
+                    </div>
+                    <div>
+                        <label for="email">Escriba su Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="escuela">Escriba su Escuela Primaria</label>
+                        <input type="text" name="escuela" id="escuela" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>¿Tiene algun parentesco?</legend>
+                    <label for="gustos">Seleccione uno</label>
+                    <select name="gustos" id="gustos">
+                        <option value="">Seleccionar</option>
+                        <option value="no">No tengo parentesco</option>
+                        <option value="musica">Herman@</option>
+                        <option value="cine">Hij@ de profesor</option>
+                    </select>
+                </fieldset>
+                
+                <div>
+                    <form action="" method="post"></form>
+                    <label for="comentario"> <strong>Centro de comentarios 🙆</strong></label>
+                    
+                </div>
+                <div>
+                    <textarea name="comentario" id="comentario" cols="40" rows="4" style="background-color:#D1CEF187"
+                        ;></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar formulario">
+                </div>
+
+            </form>
+       </section>
+    </main>
+    <footer>
+        <section class="conteiner-footer1">
+            <div class="conteiner-logo-footer">
+                <h2>CET 30</h2>
+                <p>nos comprometemos plenamente con el aprendizaje,el cuidado y el respeto de nuestros estudiantes.</p>
+                <div><a href="https://www.cet30.edu.ar/home"><img src="/assets/logo cet 302.png" alt="logo cet30"
+                            width="55px" height="55px"></a></div>
+                <p>by:samira riquelme</p>
+            </div>
+            <div class="conteiner-logo-footer2">
+                <h2>CONTACTO</h2>
+                <div>
+                    <p><span class="material-symbols-outlined">add_call</span>teléfono fijo: 299 4783637 </p>
+                    <p><span class="material-symbols-outlined">distance</span>dirección:Paraguay 1050, R8324 Cipolletti,
+                        Río Negro</p>
+                    <p><span class="material-symbols-outlined">sunny</span>días y horarios:Lunes a Viernes de 08:00 a
+                        19:30 </p>
+                </div>
+            </div>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.7432702534493!2d-67.98822642336816!3d-38.92984507171709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a30ef2ee4b6b3%3A0xf60599626c221a60!2sCentro%20Educativo%20Tecnica%20N%C2%BA%2030!5e0!3m2!1ses-419!2sar!4v1762977044530!5m2!1ses-419!2sar"
+                    width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </footer>
+    </section>
+
+</body>
+
+</html>
