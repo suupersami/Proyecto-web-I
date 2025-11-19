@@ -207,6 +207,7 @@ button {
     justify-content: center;
     gap: 55px;
     padding-top: 36px;
+    border-top: solid 2px #aa9cfa;
 }
 
 .conteiner-logo-footer2 {
@@ -335,6 +336,24 @@ form {
     flex-direction: column;
     width: 400px;        /* opcional: ancho del formulario */
     gap: 10px;           /* separa verticalmente los campos */
+    font-family: "Syne Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    height: 77%;
+}
+form legend{
+    font-size: 26px;
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #6b64bb;
+}
+form input,select{
+    border-radius: 20px;
+}
+.titulo-formulario{
+color:#1609b5
+
 }
 
 form input,
@@ -345,18 +364,55 @@ form textarea {
     font-size: 14px;
 }
 .conteiner-formulario{
-    
-    max-width: 700px; /* O el ancho que desees */
-    width: 90%;/* Esto asegura que se ajuste bien en pantallas pequeñas */
-    /* 2. Centrar el bloque horizontalmente */
+    max-width: 500px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    /* Manera abreviada: margin: 0 auto; */
-
-    /* 3. (Opcional) Agregar un poco de espacio vertical y un fondo */
     padding: 20px;
-    background-color: #f0f0f0; /* Color claro para destacar el formulario */
-    border-radius: 8px; /* Bordes redondeados */
-    height:600px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    height: 550px;
 }
+/*pagina taller de carpinteria*/
+.conteiner-taller{
+    display: flex;
+    gap: 160px;
+}
+.section-foto-carpinteria {
+display: flex;
+gap: 49px;
+}
+.text-box-carpinteria{
+     padding: 20px 25px;
+    width: 45%;
+    border-radius: 4px;
+    background-color: #CCCCFF;
+    height: 240px;
+    line-height: 87px;
+
+}
+
+.section-foto-carpinteria img{
+    width: 44%;
+    border-radius: 4px;
+    height:478px;
+
+}
+.section-1{
+    background-color: #CCCCFF;
+    padding: 20px;
+    width:460px;
+    line-height:36px;
+    font-size: 21px;
+    
+}
+/*pagina noticias*/
+.text-box-noticias{
+     padding: 20px 25px;
+    width: 600px;
+    border-radius: 4px;
+    background-color: #CCCCFF;
+
+}
+
 
